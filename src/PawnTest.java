@@ -62,7 +62,7 @@ public class PawnTest {
 
     @org.junit.Test
     public void setColumn() {
-        // 1. valid row
+        // 1. valid column
         b2.setColumn(0);
         b3.setColumn(4);
         Assert.assertEquals(0, b2.getColumn());
@@ -90,10 +90,10 @@ public class PawnTest {
     @org.junit.Test
     public void canMove() {
         // can move
-        assertTrue(b1.canMove(0, 5));
-        assertTrue(b2. canMove(1, 5));
-        assertTrue(b3. canMove(0, 2));
-        assertTrue(b4. canMove(1, 6));
+        assertTrue(b1.canMove(0, 7));
+        assertTrue(b2. canMove(1, 7));
+        assertTrue(b3. canMove(0, 0));
+        assertTrue(b4. canMove(1, 4));
 
         // cannot move 1 -- Not "ahead" move
         assertFalse(b1. canMove(1, 7));
@@ -103,9 +103,9 @@ public class PawnTest {
 
         // cannot move 2 -- stay the current position
         assertFalse(b1. canMove(0, 6));
-        assertFalse(b2. canMove(7, 6));
+        assertFalse(b2. canMove(1, 6));
         assertFalse(b3. canMove(0, 1));
-        assertFalse(b4. canMove(7, 1));
+        assertFalse(b4. canMove(1, 5));
 
         // cannot move 3 -- outside the chessboard
         assertFalse(b1. canMove(-3, 1));
@@ -118,12 +118,13 @@ public class PawnTest {
     @org.junit.Test
     public void canKill() {
         // can kill
+        b1.setRow(4);
         assertTrue(b1.canKill(b4));
 
         // cannot kill 1 -- same color
         assertFalse(b3.canKill(b4));
 
-        // cannot kill 2 -- cannot move to the position
+        // cannot kill 2 -- cannot kill opponent on the position
         assertFalse(b2.canKill(b3));
     }
 }

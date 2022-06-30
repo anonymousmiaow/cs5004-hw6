@@ -62,7 +62,7 @@ public class KnightTest {
 
     @org.junit.Test
     public void setColumn() {
-        // 1. valid row
+        // 1. valid column
         b2.setColumn(0);
         b3.setColumn(4);
         Assert.assertEquals(0, b2.getColumn());

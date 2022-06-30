@@ -1,6 +1,6 @@
 /**
- * This class represents an Abstract Chess Piece.
- * An Abstract Chess Piece has its position as a row and column,
+ * This class represents a Chess Piece Implementation.
+ * A Chess Piece Implementation has its position as a row and column,
  * and a color as an enum Color with values BLACK or WHITE.
  */
 
@@ -10,7 +10,7 @@ public class ChessPieceImplementation implements ChessPiece {
     private TypeOfColor color;
 
     /**
-     * Constructs an AbstractCHessPiece and initializes
+     * Constructs an ChessPieceImplementation and initializes
      * its initial position as a row and column, and a
      * color as an enum Color with values BLACK and WHITE.
      * @param row the row of this piece
@@ -81,7 +81,7 @@ public class ChessPieceImplementation implements ChessPiece {
 
     /**
      *  Determine if this chess piece can move to a given cell.
-     *  A piece cannot move to the current position, or go
+     *  A piece cannot move to its current position, or go
      *  outside the chessboard.
      *  Return true if it can move there, false otherwise.
      * @return true if this chess piece can move to a given cell, false otherwise
@@ -98,7 +98,9 @@ public class ChessPieceImplementation implements ChessPiece {
      * Determine if this chess piece can kill a provided piece starting
      * from where it currently is. Return true if it can kill the provided
      * piece, false otherwise.
-     * A bishop can kill any opponent’s piece if it can move to this place.
+     * A chess piece cannot kill a null chess, or a chess of the same color.
+     * As default, a chess piece can kill any opponent’s piece if it can move
+     * to this place.
      * @return true if this chess piece can kill the provided piece,
      * false otherwise
      */

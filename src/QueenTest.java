@@ -65,7 +65,7 @@ public class QueenTest {
 
     @Test
     public void setColumn() {
-        // 1. valid row
+        // 1. valid column
         q1.setColumn(7);
         q2.setColumn(0);
         q3.setColumn(4);

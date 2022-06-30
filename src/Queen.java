@@ -4,9 +4,6 @@
  * and a color as an enum Color with values BLACK or WHITE.
  */
 public class Queen extends ChessPieceImplementation {
-    private int row;
-    private int column;
-    private TypeOfColor color;
 
     /**
      * Constructs a Queen and initializes
@@ -37,7 +34,7 @@ public class Queen extends ChessPieceImplementation {
      * Determine if this chess piece can kill a provided piece starting
      * from where it currently is. Return true if it can kill the provided
      * piece, false otherwise.
-     * A Bishop can kill any opponent’s piece if it can move to its place.
+     * A Queen can kill any opponent’s piece if it can move to its place.
      * @return true if this chess piece can kill the provided piece,
      * false otherwise
      */

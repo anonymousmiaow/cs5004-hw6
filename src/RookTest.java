@@ -64,7 +64,7 @@ public class RookTest {
 
     @org.junit.Test
     public void setColumn() {
-        // 1. valid row
+        // 1. valid column
         r1.setColumn(7);
         r2.setColumn(0);
         r3.setColumn(4);

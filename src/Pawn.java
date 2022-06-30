@@ -7,8 +7,6 @@
  */
 
 public class Pawn extends ChessPieceImplementation {
-    private int row, column;
-    private TypeOfColor color;
 
     /**
      * Constructs a Knight and initializes
@@ -33,12 +31,11 @@ public class Pawn extends ChessPieceImplementation {
     @Override
     public boolean canMove(int col, int row) {
         if (!super.canMove(col, row)) return false;
-//        boolean situation = false;
         if (getColor().equals(TypeOfColor.BLACK)){
-            return (row - this.getRow() == 1) && (col == this.getColumn());
+            return (row - this.getRow() == -1) && (col == this.getColumn());
         }
         else if (getColor().equals(TypeOfColor.WHITE)){
-            return (row - this.getRow() == -1) && (col == this.getColumn());
+            return (row - this.getRow() == 1) && (col == this.getColumn());
         }
         return false;
     }
@@ -52,19 +49,20 @@ public class Pawn extends ChessPieceImplementation {
      * @return true if this chess piece can kill the provided piece,
      * false otherwise
      */
+    @Override
     public boolean canKill(ChessPiece piece) {
         boolean situation = false;
         if (piece == null) {
             return false;
         }
-        else if (piece.getColor().equals(color)) {
+        else if (piece.getColor().equals(this.getColor())) {
             return false;
         }
         else if (TypeOfColor.WHITE.equals(piece.getColor())) {
-            situation = (piece.getRow() - this.getRow() == 1) && (Math.abs(piece.getColumn() - this.getColumn()) == 1);
+            situation = (piece.getRow() - this.getRow() == -1) && (Math.abs(piece.getColumn() - this.getColumn()) == 1);
         }
         else if (TypeOfColor.BLACK.equals(piece.getColor())) {
-            situation = (piece.getRow() - this.getRow() == -1) && (Math.abs(piece.getColumn() - this.getColumn()) == 1);
+            situation = (piece.getRow() - this.getRow() == 1) && (Math.abs(piece.getColumn() - this.getColumn()) == 1);
         }
         return situation;
     }

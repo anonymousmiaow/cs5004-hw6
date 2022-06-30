@@ -66,7 +66,7 @@ public class BishopTest {
 
     @org.junit.Test
     public void setColumn() {
-        // 1. valid row
+        // 1. valid column
         b1.setColumn(7);
         b2.setColumn(0);
         b3.setColumn(4);

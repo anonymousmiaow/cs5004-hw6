@@ -5,9 +5,6 @@
  */
 
 public class Rook extends ChessPieceImplementation {
-    private int row;
-    private int column;
-    private TypeOfColor color;
 
     /**
      * Constructs a Rook and initializes
@@ -37,7 +34,7 @@ public class Rook extends ChessPieceImplementation {
      * Determine if this chess piece can kill a provided piece starting
      * from where it currently is. Return true if it can kill the provided
      * piece, false otherwise.
-     * A Bishop can kill any opponent’s piece if it can move to its place.
+     * A Rook can kill any opponent’s piece if it can move to its place.
      * @return true if this chess piece can kill the provided piece,
      * false otherwise
      */

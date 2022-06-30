@@ -5,8 +5,6 @@
  */
 
 public class Knight extends ChessPieceImplementation {
-    private int row, column;
-    private TypeOfColor color;
     
     /**
      * Constructs a Knight and initializes

@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c68413b1-41d8-4c86-a78d-4599d6dcd904" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bishop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BishopTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChessDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChessPiece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChessPieceImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Knight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KnightTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pawn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PawnTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Queen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QueenTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Rook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BishopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BishopTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KnightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KnightTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PawnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PawnTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QueenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RookTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +61,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BishopTest">
+  <component name="RunManager" selected="JUnit.KnightTest">
     <configuration name="BishopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hw6" />
       <option name="PACKAGE_NAME" value="" />
@@ -123,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KnightTest" />
         <item itemvalue="JUnit.BishopTest" />
         <item itemvalue="JUnit.RookTest" />
         <item itemvalue="JUnit.QueenTest" />
         <item itemvalue="JUnit.PawnTest" />
-        <item itemvalue="JUnit.KnightTest" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656558759484</updated>
-      <workItem from="1656558760814" duration="699000" />
+      <workItem from="1656558760814" duration="1594000" />
     </task>
     <servers />
   </component>

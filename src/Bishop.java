@@ -5,8 +5,6 @@
  */
 
 public class Bishop extends ChessPieceImplementation {
-    private int row, column;
-    private ChessPieceImplementation.TypeOfColor color;
 
     /**
      * Constructs a Bishop and initializes
@@ -16,14 +14,14 @@ public class Bishop extends ChessPieceImplementation {
      * @param row the row of this piece
      * @param color the color of this piece
      */
-    public Bishop(int column, int row, ChessPieceImplementation.TypeOfColor color) {
+    public Bishop(int column, int row, TypeOfColor color) {
         super(column, row, color);
     }
 
     /**
      *  Determine if this chess piece can move to a given cell.
      *  Return true if it can move there, false otherwise.
-     *  The piece cannot move to the current position, or go
+     *  The piece cannot move to its current position, or go
      *  outside the chessboard.
      *  A bishop can only move diagonally.
      * @return true if this chess piece can move to a given cell, false otherwise
@@ -46,4 +44,3 @@ public class Bishop extends ChessPieceImplementation {
         return super.canKill(piece);
     }
 }
-
